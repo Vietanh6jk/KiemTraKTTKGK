@@ -2,13 +2,14 @@ package com.example.CAU_2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import com.example.CAU_2.service.ConmuserService;
 import com.example.CAU_2.service.ProducerService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
-@SpringBootApplication
+@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 public class Cau2Application {
 
 	public static void main(String[] args) throws JsonProcessingException {
