@@ -1,4 +1,4 @@
-package com.example.CAU_1.Enitty;
+package com.example.CAU_1.entity;
 
 import lombok.Data;
 import lombok.Getter;

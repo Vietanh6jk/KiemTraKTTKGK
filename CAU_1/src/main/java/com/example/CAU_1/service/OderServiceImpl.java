@@ -1,11 +1,12 @@
-package com.example.CAU_1.ServiceImpl;
+package com.example.CAU_1.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import com.example.CAU_1.Enitty.Order;
-import com.example.CAU_1.Reposity.OrderReposity;
-import com.example.CAU_1.Service.OrderService;
+import com.example.CAU_1.entity.Order;
+import com.example.CAU_1.reposity.OrderReposity;
 
+@Service
 public class OderServiceImpl implements OrderService {
 	@Autowired
 	private OrderReposity orderReposity;
